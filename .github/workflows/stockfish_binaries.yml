@@ -47,7 +47,7 @@ jobs:
             config: {os: macos-12}
         include:
           - binaries: apple-silicon
-            config: { os: macos-12 }
+            config: {os: macos-12}
     defaults:
       run:
         working-directory: src
