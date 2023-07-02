@@ -42,12 +42,14 @@ jobs:
           - x86-64
           - x86-64-modern
           - x86-64-avx2
+          - apple-silicon
         exclude:
           - binaries: x86-64-avx2
             config: {os: macos-12}
-        include:
           - binaries: apple-silicon
-            config: {os: macos-12}
+            config: {os: ubuntu-20.04}
+          - binaries: apple-silicon
+            config: {os: windows-2022}
     defaults:
       run:
         working-directory: src
